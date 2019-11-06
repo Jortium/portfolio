@@ -1,0 +1,291 @@
+* {
+        box-sizing: border-box;
+        border: 0;
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        list-style: none;
+}
+
+html,
+body {
+        width: 100%;
+        height: 100%;
+}
+
+.splashPage {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 25px;
+        font-family: 'Righteous', cursive;
+        line-height: 70px;
+}
+
+.splashContainer {
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/colorado.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-align: center;
+}
+
+
+.splashContainer>span {
+        font-size: 20px;
+        font-family: 'Raleway', cursive;
+}
+
+.displayPortfolio {
+        width: 90px;
+        height: 40px;
+        font-size: 20px;
+        font-weight: 500;
+        font-family: 'Raleway', cursive;
+        background-color: #53D7E0;
+        border-radius: 10px;
+        font-size: 24px;
+        cursor: pointer;
+}
+
+.displayPortfolio:hover {
+        background-color: #2F7A80;
+}
+
+
+.navBar {
+        font-family: 'Righteous', cursive;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        background-color: #53D7E0;
+        width: 100%;
+        height: 50px;
+        font-size: 20px;
+}
+
+.navTop {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+        margin-left: 5px;
+        margin-right: 5px;
+}
+
+.navOpen,
+.navClose {
+        height: 30px;
+}
+
+.navList {
+        display: none;
+        background-color: #53D7E0;
+}
+
+.navName {
+        color: black;
+}
+
+
+.navList>li {
+        display: flex;
+        justify-content: flex-end;
+        padding: 10px;
+}
+
+.navLink {
+        color: black;
+        margin: 5px 10px 5px 10px;
+}
+
+.navLink:hover {
+        cursor: pointer;
+        color: white;
+}
+
+.hidefromBurgerMonster {
+        display: none !important;
+}
+
+.spacer {
+        width: 100%;
+        padding: 30px;
+}
+
+/*Content Area*/
+
+.pageContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+}
+
+.contentSection {
+        font-family: 'Raleway', sans-serif;
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        line-height: 40px;
+        margin: 0px 10px 0px 10px;
+        font-weight: 600;
+}
+
+
+.joshJava {
+        border-style: solid;
+        border-width: 3px;
+        margin-bottom: 20px;
+}
+
+
+.quizName {
+        margin-bottom: 10px;
+}
+
+.preview {
+        width: 100%;
+}
+
+.clickLink {
+        display: table-caption;
+        font-size: 12px;
+        margin-top: -20px;
+}
+
+.borderProject {
+        margin: 0px 5px 20px 5px;
+        border-style: solid;
+        border-width: 3px;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+}
+
+.logoContainer {
+        width: 100%;
+        display: flex;
+        flex-flow: row;
+        align-items: flex-end;
+        margin-left: 10px;
+}
+
+.logo {
+        width: 25px;
+        margin: 5px 5px 10px 0px;
+}
+
+
+/*Contact Information*/
+footer {
+        background-color: black;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+}
+
+.contactContainer {
+        display: flex;
+        justify-content: center;
+}
+
+.contactList {
+        display: flex;
+        flex-direction: row;
+}
+
+.contactInfo {
+        height: 30px;
+        width: 30px;
+        margin: 5px 25px 5px 25px;
+}
+
+
+/*Tablet View*/
+@media (min-width: 540px) {
+
+        main {
+                max-width: 600px;
+        }
+
+        .splashPage {
+                font-size: 45px;
+                line-height: 70px;
+        }
+
+        .splashContainer > span {
+                font-size: 25px;
+                font-family: 'Raleway', cursive;
+        }
+}
+
+
+
+/*Desktop View*/
+@media (min-width: 769px) {
+
+        main {
+                max-width: 800px;
+        }
+
+        body {
+                display: flex;
+        }
+
+        .displayPortfolio {
+                width: 120px;
+                height: 50px;
+                font-size: 20px;
+                font-weight: 600;
+        }
+        
+        .navTop{
+                display: none;
+        }
+
+        .navOpen,
+        .navClose {
+                height: 30px;
+        }
+
+        .navNames {
+                display: flex;
+                justify-content: flex-start;
+
+        }
+
+        .navList {
+                display: flex !important;
+                height: 50px;
+                justify-content: flex-end;
+        }
+
+
+        .hidefromBurgerMonster {
+                display: flex !important;
+                margin-right: auto;
+        }
+
+        .contactInfo {
+                height: 40px;
+                width: 40px;
+                margin: 5px 40px 5px 40px;
+        }
+}
