@@ -1,26 +1,28 @@
-function displayPortfolio(){
-    $('.splashPage').on('click', '.displayPortfolio',
-    function () {
-        navWelcome();       
-    });
-}
+// function displayPortfolio(){
+//     $('.splashPage').on('click', '.displayPortfolio',
+//     function () {
+//         navWelcome();       
+//     });
+// }
 
-function navWelcome(){
-    $('.splashContainer').remove();
-    $('.splashPage').fadeIn(1500).append(`<h1 class="welcome">Welcome</h1>`);
-    showPortfolio();
- }
+// function navWelcome(){
+//     $('.splashContainer').remove();
+//     $('.splashPage').fadeIn(1500).append(`<h1 class="welcome">Welcome</h1>`);
+//     showPortfolio();
+//  }
 
 
-function showPortfolio() {
-    $('.splashPage').delay(1000).fadeOut(1000);
-    showPage();
-    }
+// function showPortfolio() {
+//     $('.splashPage').delay(1000).fadeOut(1000);
+//     showPage();
+//     }
 
-function showPage(){
-    $('.pageContainer').delay(2000).fadeIn();
-    $('.pageHome').delay(3000).slideDown(1000);
-}
+// function showPage(){
+//     $('.pageContainer').delay(2000).fadeIn();
+//     $('.pageHome').delay(3000).slideDown(1000);
+// }
+
+showHome();
 
 function expand() {
     $('.navMobile').on('click', '.navOpen',
@@ -96,7 +98,7 @@ function navProjects() {
 }
 
 function handlePortfolio() {
-    displayPortfolio();
+    // displayPortfolio();
     expand();
     contract();
     navHome();

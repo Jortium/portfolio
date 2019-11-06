@@ -44,7 +44,7 @@ body {
         font-family: 'Raleway', cursive;
 }
 
-.displayPortfolio {
+.webButton{
         width: 90px;
         height: 40px;
         font-size: 20px;
@@ -56,7 +56,7 @@ body {
         cursor: pointer;
 }
 
-.displayPortfolio:hover {
+.webButton:hover {
         background-color: #2F7A80;
 }
 
