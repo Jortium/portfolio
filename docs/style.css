@@ -117,10 +117,14 @@ body {
 .hidefromBurgerMonster {
         display: none !important;
 }
-
-.spacer {
+.topspacer {
         width: 100%;
-        padding: 1000px;
+        padding-bottom: 50px;
+}
+
+.bottomspacer {
+        width: 100%;
+        padding-top: 50px;
 }
 
 /*Content Area*/
