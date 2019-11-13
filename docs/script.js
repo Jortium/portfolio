@@ -1,24 +1,25 @@
-function displayPortfolio(){
+function displayPortfolio() {
     $('.splashPage').on('click', '.displayPortfolio',
-    function () {
-        navWelcome();       
+        function () {
+            navWelcome();
+        });
+}
+
+function navWelcome() {
+    $('.splashContainer').fadeOut(function () {
+        $('.splashPage').fadeIn().append(`<h1 class="welcome">Welcome</h1>`)
+        showPortfolio();
     });
 }
 
-function navWelcome(){
-    $('.splashContainer').fadeOut(function(){
-        $('.splashPage').fadeIn().append(`<h1 class="welcome">Welcome</h1>`)
-    showPortfolio();
-     });
- }
-
 
 function showPortfolio() {
-    $('.splashPage').delay(1000).fadeOut(function(){
+    $('.splashPage').delay(1000).fadeOut(function () {
         $('.pageContainer').fadeIn(function () {
             $('.splashPage').remove();
             showHome();
-    })});
+        })
+    });
 }
 
 function expand() {
@@ -87,7 +88,7 @@ function navAbout() {
 }
 
 function navProjects() {
-    
+
     $('.navWrap').on('click', '.navProjects',
         function () {
             showProjects();

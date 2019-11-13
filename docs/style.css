@@ -44,7 +44,7 @@ body {
         font-family: 'Raleway', cursive;
 }
 
-.webButton{
+.webButton {
         width: 90px;
         height: 40px;
         font-size: 20px;
@@ -117,6 +117,7 @@ body {
 .hidefromBurgerMonster {
         display: none !important;
 }
+
 .topspacer {
         width: 100%;
         padding-bottom: 50px;
@@ -169,6 +170,15 @@ body {
         display: table-caption;
         font-size: 12px;
         margin-top: -20px;
+}
+
+.buttonContainer {
+        margin: 10px;
+}
+
+.webButton {
+        margin-left: 20px;
+        margin-right: 20px;
 }
 
 .borderProject {
@@ -234,7 +244,7 @@ footer {
                 line-height: 70px;
         }
 
-        .splashContainer > span {
+        .splashContainer>span {
                 font-size: 25px;
                 font-family: 'Raleway', cursive;
         }
@@ -259,8 +269,8 @@ footer {
                 font-size: 20px;
                 font-weight: 600;
         }
-        
-        .navTop{
+
+        .navTop {
                 display: none;
         }
 
