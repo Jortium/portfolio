@@ -157,8 +157,11 @@ body {
         margin-bottom: 20px;
 }
 
+.spacebetween{
+       height: 40px;
+}
 
-.quizName {
+.projectName {
         margin-bottom: 10px;
 }
 
@@ -192,16 +195,15 @@ body {
 }
 
 .logoContainer {
-        width: 100%;
         display: flex;
         flex-flow: row;
-        align-items: flex-end;
+        align-items: center;
         margin-left: 10px;
 }
 
 .logo {
         width: 25px;
-        margin: 5px 5px 10px 0px;
+        margin: 5px 5px 10px 5px;
 }
 
 
