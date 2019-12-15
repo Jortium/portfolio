@@ -157,11 +157,6 @@ body {
         margin-bottom: 20px;
 }
 
-.projectSpacer{
-        width: 100%;
-        height: 635px;
-}
-
 .spacebetween{
        height: 40px;
 }
@@ -268,6 +263,11 @@ footer {
 
         body {
                 display: flex;
+        }
+
+        .projectSpacer{
+                width: 100%;
+                height: 635px;
         }
 
         .displayPortfolio {
