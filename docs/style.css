@@ -270,6 +270,9 @@ footer {
                 height: 635px;
         }
 
+        .projectContainer{
+                max-height:10%
+        }
         .displayPortfolio {
                 width: 120px;
                 height: 50px;
